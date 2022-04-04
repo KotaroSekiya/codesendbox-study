@@ -63,3 +63,28 @@ console.log(message1);
 //テンプレート文字列を用いた方法
 const message2 = `私の名前は${name}です。年齢は${age}歳です。`;
 console.log(message2);
+
+/**
+ * アロー関数
+ */
+
+//従来の関数
+function func1(str) {
+  return str;
+}
+const func2 = function (str) {
+  return str;
+};
+console.log(func1("func1です"));
+console.log(func2("func2です"));
+
+//アロー関数
+const func3 = (str) => {
+  return str;
+};
+console.log(func3("func3です"));
+
+const func4 = (num1, num2) => {
+  return num1 + num2;
+};
+console.log(func4(10, 20));
